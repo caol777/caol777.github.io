@@ -1,10 +1,8 @@
 ## KOTH Writeup
-# [Image Name/Challenge Title] - Write-Up
+# Cal Poly Swfit KOTH - Write-Up
 
-**Author:** [Your Name]  
-**Date:** [Date]  
-**Image Source/Creator:** [Creator Name]  
-
+**Author:** Shaamad Allison 
+**Date:** 12/1/2025
 ---
 
 ## 1. The Scenario & Policies
