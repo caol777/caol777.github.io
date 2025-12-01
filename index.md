@@ -1,5 +1,3 @@
-Here you can say lots of fun things about your site.
+This is my blog for writeups on cybersecurity competitions, events, and projects. I hope my insights can help people learn
 
-Maybe say a some things about yourself.
-
-Or maybe what you plan to blog about.
+Hey, I'm Shaamad. I am an MIS major who is passionate about IT. I love Linux (Mostly Debian), I love music especially physical music like records/cds, and i love technology. 
