@@ -19,8 +19,7 @@ youtube_username: "@FAUCyberSecurityClub"
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
 
-remote_theme: b2a3e8/jekyll-theme-console
-
+remote_theme: pages-themes/midnight@v0.2.0
 rss: rss
 
 kramdown:
@@ -30,7 +29,8 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-seo-tag
+  - jekyll-remote-theme 
+
 
 titles_from_headings:
   strip_title: true
