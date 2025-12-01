@@ -19,7 +19,7 @@ youtube_username: "@FAUCyberSecurityClub"
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
 
-theme: "minma"
+theme: "minima"
 rss: rss
 
 kramdown:
