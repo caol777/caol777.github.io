@@ -1,0 +1,43 @@
+/* css/darkmode.css */
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* Navbar */
+body.dark-mode .navbar-custom {
+  background-color: #1f1f1f; /* Darker header */
+}
+
+/* Links */
+body.dark-mode a {
+  color: #66b0ff;
+}
+body.dark-mode a:hover {
+  color: #99caff;
+}
+
+/* Post Content */
+body.dark-mode .post-preview > a > .post-title,
+body.dark-mode .post-preview > a > .post-subtitle {
+  color: #e0e0e0;
+}
+
+body.dark-mode .section-heading {
+  color: #ffffff;
+}
+
+/* Code Blocks (GitHub style usually has white bg) */
+body.dark-mode pre, 
+body.dark-mode code {
+  background-color: #2d2d2d;
+  color: #f8f8f2;
+  border: 1px solid #444;
+}
+
+/* Footer */
+body.dark-mode footer {
+  background-color: #121212;
+  color: #888;
+}
