@@ -19,7 +19,7 @@ youtube_username: "@FAUCyberSecurityClub"
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
 
-remote_theme: pages-themes/midnight@v0.2.0
+theme: pages-themes/midnight@v0.2.0
 rss: rss
 
 kramdown:
