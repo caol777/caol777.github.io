@@ -5,16 +5,20 @@
 **Date:** 12/1/2025
 ---
 
-## 1. The Scenario & Policies
-**Critical Policies:**
-* **OS Version:** [e.g., Ubuntu 24.04]
-* **Authorized Users:** [List known good users]
-* **Forbidden Software:** [e.g., Hacking tools, media files]
-* **Special Instructions:** [e.g., "Do not upgrade the OS"]
+## 1. Overview on the competition
 
+This KOTH competition was a purple team competition where compeitors would log remote into a kali machine and attack 6 machines, gain root, plant their flag, and defend it from other hackers trying to plan theirs.
+
+Due to us not having direct access to the envrionment we had to use ssh tunnelling to access things like the websites, set up blood hound, and more.
+
+<img width="680" height="801" alt="image" src="https://github.com/user-attachments/assets/5127f953-ef93-4e30-b15e-df02a568e3a3" />
+
+This was the competition environment. 
+
+I went ahead and tried to gain access to a linux machine at first but after the first hour i went onto Windows.
 ---
 
-## 2. Forensics
+##  Windows
 ### Forensic Question [1]
 **Question:**
 > [Paste the specific question or task here]
