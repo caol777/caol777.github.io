@@ -164,3 +164,7 @@ In /etc/groups make sure that tslow is in the sudo group.
 ## Change insecure password for user bzuckerman
 The user bzuckerman has a very insecure name so to fix that do sudo passwd bzuckerman and change his password to password123!@#.
 
+### The End
+I would like to thank immortal for creating this image and helping me with the last few questions. I deciced to make this write up to help anyone who would need it like i did.
+![image](https://github.com/user-attachments/assets/aee0aee1-fe36-4b6d-85b9-0d6072213aa8)
+
