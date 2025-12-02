@@ -20,11 +20,10 @@ This was the competition environment.
 
 To start off with windows i did an nmap scan to 
 
-    ```bash
-    [nmap -sC -sV -T5 [Ip Address] ]
-    ```
+   
+    [nmap -sC -sV -T5 [Ip Address]
 
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/344001df-1b97-4218-b575-aaf9b638c40b" />
+<img width="1227" height="938" alt="Screenshot 2025-12-01 000733" src="https://github.com/user-attachments/assets/f31fec3b-c64e-416d-8f33-67847c29d8ed" />
 
 
 
