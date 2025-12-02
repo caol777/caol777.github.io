@@ -1,8 +1,5 @@
 ## KOTH Writeup
 # Cal Poly Swfit KOTH - Write-Up
-
-**Author:** Shaamad Allison 
-**Date:** 12/1/2025
 ---
 
 ## 1. Overview on the competition
@@ -15,7 +12,8 @@ Due to us not having direct access to the envrionment we had to use ssh tunnelli
 
 This was the competition environment. 
 
-I went ahead and tried to gain access to a linux machine at first but after the first hour i went onto Windows.
+ At the start, went ahead and tried to gain access to a linux machine at first but after the first hour i went onto Windows. actually i could have
+
 ---
 
 ##  Windows
