@@ -12,52 +12,21 @@ Due to us not having direct access to the envrionment we had to use ssh tunnelli
 
 This was the competition environment. 
 
- At the start, went ahead and tried to gain access to a linux machine at first but after the first hour i went onto Windows. actually i could have
+ At the start, i went ahead and tried to gain access to a linux machine at first but after the first hour i went onto Windows so ill go over my attack path for windows first.
 
 ---
 
 ##  Windows
-### Forensic Question [1]
-**Question:**
-> [Paste the specific question or task here]
 
-**Walkthrough:**
-1.  **Methodology:** [Explain the thought process. E.g., "I used the `find` command to look for .jpg files."]
-2.  **Command Used:**
+To start off with windows i did an nmap scan to 
+
     ```bash
-    [Insert Command Here, e.g., find /home -name "*.jpg"]
+    [nmap -sC -sV -T5 [Ip Address] ]
     ```
+
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/344001df-1b97-4218-b575-aaf9b638c40b" />
+
+
+
 3.  **Observation:** [Describe what you found.]
 
-**Evidence/Screenshot:**
-![Description of image](path/to/screenshot.png)
-
-**Answer:**
-> `[Insert Final Answer/Hash/Flag Here]`
-
----
-
-### Forensic Question [2]
-**Question:**
-> [Paste Question Here]
-
-**Walkthrough:**
-[Explain how you found the answer]
-
-**Evidence/Screenshot:**
-![Description of image](path/to/screenshot.png)
-
-**Answer:**
-> `[Insert Answer Here]`
-
----
-
-## 3. MISC / Hidden Challenges
-**Challenge Description:**
-[Describe the hidden element found, e.g., "Found a secret.txt that was empty."]
-
-**Solution:**
-[Explain the tools used to solve it, e.g., `getfattr`, Steghide, etc.]
-
-```bash
-[Insert relevant commands]
