@@ -62,6 +62,8 @@ After logging into the share i found the file and sent it to my home directory w
     get creds.txt
     
 Finally, after i got the file i got my credentials. 
+
+
 <img width="148" height="110" alt="image" src="https://github.com/user-attachments/assets/d9ee8a3a-0773-4d84-aa84-35d96af80404" />
 
 
