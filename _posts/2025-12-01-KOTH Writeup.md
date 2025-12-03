@@ -17,6 +17,7 @@ This was the competition environment, each machine had a scored service which wa
 In order to get scored you had to be able keep your services running and secured while having your flag in one of the specified file locations:
 
 Linux: /root/flag.txt
+
 Windows: \Users\Administrator\Desktop\flag.txt
 
 ---
