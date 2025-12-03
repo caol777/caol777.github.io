@@ -55,14 +55,13 @@ First, I did this command to find all smb shares on the machine.
 After getting a look at the shares i instantly suspected that data was the share with plain text credentials so i used this command to log in. When I logged in, i found the file and sent it to my home directory with these two commands
 
     smbclient //[Ip Address]/Data -N
-    
+    ------------------------------------
     ls
     get creds.txt
 
-After logging into the share i found the file and sent it to my home directory with these two commands.
+ <img width="803" height="347" alt="image" src="https://github.com/user-attachments/assets/500b8fc0-846d-4adb-903e-9292d2d16377" />
 
-    ls
-    get creds.txt
+
 Finally, after i got the file i got my credentials.
 
 
