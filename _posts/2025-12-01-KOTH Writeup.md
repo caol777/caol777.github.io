@@ -20,6 +20,8 @@ Linux: /root/flag.txt
 
 Windows: \Users\Administrator\Desktop\flag.txt
 
+There was also trivia questions what would give us points if we answered them correctly and fast enough.
+
 ---
 
  At the start, i went ahead and tried to gain access to a linux machine at first but after the first hour i went onto Windows so ill go over my attack path for windows first.
@@ -28,7 +30,7 @@ Windows: \Users\Administrator\Desktop\flag.txt
 
 ##  Windows
 
-To start off with windows i did an nmap scan to see the domain name and what ports were open. 
+To start off with windows i did an nmap scan to see what ports were open. 
 
    
     nmap -sC -sV -T5 [Ip Address]
@@ -36,7 +38,32 @@ To start off with windows i did an nmap scan to see the domain name and what por
 <img width="1227" height="938" alt="Screenshot 2025-12-01 000733" src="https://github.com/user-attachments/assets/f31fec3b-c64e-416d-8f33-67847c29d8ed" />
 
 
-So in this screenshot, i was able to see that ldap, 
+So in this screenshot, i was able to see that ldap and kerberos are open as well as the domain name which we needed for our first trivia question.
+
+At this point i was stuck because i thought that i needed credentials to get any useful information out the services. That was until, trivia question 2!
+
+<img width="1020" height="285" alt="image" src="https://github.com/user-attachments/assets/055aeaf4-60ab-4ca3-a580-80ca98580bdf" />
+
+This question allowed me to finally start chipping away at windows. 
+
+First, I did this command to find all smb shares on the machine.
+
+    smbclient -L [Ip Address]
+
+<img width="393" height="115" alt="image" src="https://github.com/user-attachments/assets/13d55201-9004-48d3-8705-a58917e5d0dc" />
+
+After getting a look at the shares i instantly suspected that data was the share with plain text credentials so i used this command to log in
+
+    smbclient //[Ip Address]/Data -N
+
+After logging into the share i found the file and sent it to my home directory with these two commands.
+
+    ls
+    get creds.txt
+    
+Finally, after i got the file i got my credentials. 
+<img width="148" height="110" alt="image" src="https://github.com/user-attachments/assets/d9ee8a3a-0773-4d84-aa84-35d96af80404" />
+
 
 3.  **Observation:** [Describe what you found.]
 
