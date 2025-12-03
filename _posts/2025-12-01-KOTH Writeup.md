@@ -50,7 +50,7 @@ First, I did this command to find all smb shares on the machine.
 
     smbclient -L [Ip Address]
 
-<img width="393" height="115" alt="image" src="https://github.com/user-attachments/assets/13d55201-9004-48d3-8705-a58917e5d0dc" />
+<img width="637" height="239" alt="image" src="https://github.com/user-attachments/assets/bc822165-d897-4bc2-8d6a-25da91c2514e" />
 
 After getting a look at the shares i instantly suspected that data was the share with plain text credentials so i used this command to log in
 
