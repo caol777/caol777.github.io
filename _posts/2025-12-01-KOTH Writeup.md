@@ -31,7 +31,7 @@ Windows: \Users\Administrator\Desktop\flag.txt
 To start off with windows i did an nmap scan to see the domain name and what ports were open. 
 
    
-    [nmap -sC -sV -T5 [Ip Address]
+    nmap -sC -sV -T5 [Ip Address]
 
 <img width="1227" height="938" alt="Screenshot 2025-12-01 000733" src="https://github.com/user-attachments/assets/f31fec3b-c64e-416d-8f33-67847c29d8ed" />
 
