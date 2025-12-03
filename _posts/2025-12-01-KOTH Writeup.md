@@ -63,4 +63,4 @@ After logging into the share i found the file and sent it to my home directory w
 Finally, after i got the file i got my credentials.
 
 
-<img width="365" height="112" alt="image" src="https://github.com/user-attachments/assets/f702a914-16b0-4e03-88e9-995053689de3" />
+<img width="227" height="194" alt="image" src="https://github.com/user-attachments/assets/b9ad7189-c87f-4892-92c4-6f024a6f663e" />
