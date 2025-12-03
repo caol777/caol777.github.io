@@ -18,7 +18,7 @@ This was the competition environment.
 
 ##  Windows
 
-To start off with windows i did an nmap scan to 
+To start off with windows i did an nmap scan to see the domain name and what ports are open.
 
    
     [nmap -sC -sV -T5 [Ip Address]
@@ -26,6 +26,7 @@ To start off with windows i did an nmap scan to
 <img width="1227" height="938" alt="Screenshot 2025-12-01 000733" src="https://github.com/user-attachments/assets/f31fec3b-c64e-416d-8f33-67847c29d8ed" />
 
 
+So in this screenshot, i was able to 
 
 3.  **Observation:** [Describe what you found.]
 
