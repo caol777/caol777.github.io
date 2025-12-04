@@ -20,6 +20,8 @@ Linux: /root/flag.txt
 
 Windows: \Users\Administrator\Desktop\flag.txt
 
+Also, for the sake of fun, you cant change the root/Administrator password.
+
 There was also trivia questions what would give us points if we answered them correctly and fast enough.
 
 ---
@@ -143,9 +145,15 @@ Once I got admin, I had to plant my flag and secure the machine so other hackers
 
 Somehow the attacker still was able to steal my flag and i had to figure out a way to get it back. One thing i knew is that we couldnt delete files so the only way which went that my script was partily flawed but for a quick fix i just removed the attributes and then ran my script again. 
 
+    attrib -r -h -s C:\Users\Administrator\Desktop\flag.txt
 
-After that, i changed the passwords of the domain admin accounts that i used to get the NTML hash. 
+   <img width="1007" height="306" alt="image" src="https://github.com/user-attachments/assets/0c55e992-6576-4a5a-a5b7-85263205a810" />
 
+After that, i changed the passwords of the domain admin accounts that i used to get the NTML hash sicne i couldnt change the admin password, i had to remediate my path to admin. 
+
+    net user peggy SUPER_L0NG_PASS123!
+    ------------------------------------
+    $impacket-secretsdump kingofthehill.local/peggy:password2@10.109.124.214
 
 ---
 ## Attacking Linux
