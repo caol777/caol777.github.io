@@ -149,7 +149,7 @@ Somehow the attacker still was able to steal my flag and i had to figure out a w
 
    <img width="1007" height="306" alt="image" src="https://github.com/user-attachments/assets/0c55e992-6576-4a5a-a5b7-85263205a810" />
 
-After that, i changed the passwords of the domain admin accounts that i used to get the NTML hash sicne i couldnt change the admin password, i had to remediate my path to admin. 
+After that, i changed the passwords of the domain admin accounts that i used to get the NTML hash sicne i couldnt change the admin password, i had to remediate my path to admin so no one else could use it.  
 
     net user peggy SUPER_L0NG_PASS123!
     ------------------------------------
@@ -158,6 +158,10 @@ After that, i changed the passwords of the domain admin accounts that i used to 
 
 
 <img width="714" height="236" alt="image" src="https://github.com/user-attachments/assets/3da1b254-e231-43f6-99c9-59c994d49f30" />
+
+Finally, when that was over, I went ahead and planted my flag in remaining Windows machines.
+
+<img width="357" height="654" alt="image" src="https://github.com/user-attachments/assets/309b63ad-e368-4913-b127-c353a58cea08" />
 
 ---
 ## Attacking Linux
