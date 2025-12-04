@@ -68,4 +68,18 @@ Finally, after i got the file i got my credentials.
 <img width="227" height="194" alt="image" src="https://github.com/user-attachments/assets/b9ad7189-c87f-4892-92c4-6f024a6f663e" />
 
 
-With these credentials i was able to set up a 
+With these credentials i was able to set up a password spray attack to see what accounts worked.
+
+<img width="586" height="423" alt="image" src="https://github.com/user-attachments/assets/66e7f2a0-e7fb-49ad-9e61-f109146c1a8a" />
+
+
+After i found a valid login i used it to perform a kereroast attack on the domain controller (Since kereberos was open). 
+
+<img width="725" height="39" alt="image" src="https://github.com/user-attachments/assets/b8365b67-5e26-47fb-ac96-72b3a93f3028" />
+
+
+<img width="947" height="323" alt="image" src="https://github.com/user-attachments/assets/4d9002e7-195e-47ea-b6d2-cc884030c80a" />
+
+
+<img width="421" height="56" alt="image" src="https://github.com/user-attachments/assets/72f3cb94-ac47-4940-8537-31837555f409" />
+
