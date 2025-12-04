@@ -81,5 +81,6 @@ After i found a valid login i used it to perform a kereroast attack on the domai
 <img width="947" height="323" alt="image" src="https://github.com/user-attachments/assets/4d9002e7-195e-47ea-b6d2-cc884030c80a" />
 
 
-<img width="421" height="56" alt="image" src="https://github.com/user-attachments/assets/72f3cb94-ac47-4940-8537-31837555f409" />
+<img width="682" height="103" alt="image" src="https://github.com/user-attachments/assets/b9dbda38-b941-48a3-8307-b5f56aa8e237" />
+
 
