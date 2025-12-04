@@ -85,7 +85,7 @@ Now that i got the kereberos hashes it was time to crack them with hashcat.
 
     hashcat -a 0 output.txt /usr/share/wordlists/rockyou.txt.gz
     
-<img width="702" height="89" alt="image" src="https://github.com/user-attachments/assets/ab31f31a-e87d-42b7-b568-83aced193cec" />
+<img width="682" height="103" alt="image" src="https://github.com/user-attachments/assets/ab31f31a-e87d-42b7-b568-83aced193cec" />
 
 <img width="682" height="103" alt="image" src="https://github.com/user-attachments/assets/b9dbda38-b941-48a3-8307-b5f56aa8e237" />
 
