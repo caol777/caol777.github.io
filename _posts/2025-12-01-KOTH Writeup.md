@@ -230,6 +230,6 @@ In the end, these were the machines that I had under my control.
 
 This was the most that I had at one time.
 
-<img width="755" height="762" alt="Screenshot 2025-11-30 182928" src="https://github.com/user-attachments/assets/5177bbca-1533-4837-be7f-d18d9b02717f" />
+<img width="661" height="690" alt="image" src="https://github.com/user-attachments/assets/8f707d79-c624-40aa-b316-1a726a604abf" />
 
 Overall, I ended in **2nd place** and had a great time competing in such a unique and fun competition.
