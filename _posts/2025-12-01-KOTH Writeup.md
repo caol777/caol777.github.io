@@ -161,10 +161,12 @@ After that, i changed the passwords of the domain admin accounts that i used to 
 
 Finally, when that was over, I went ahead and planted my flag in remaining Windows machines.
 
-<img width="357" height="654" alt="image" src="https://github.com/user-attachments/assets/309b63ad-e368-4913-b127-c353a58cea08" />
+<img width="358" height="18" alt="image" src="https://github.com/user-attachments/assets/2b5f2520-f3ff-4c1b-aaee-a602416aa17b" />
 
 ---
 ## Attacking Linux
+
+After i got claimed all of the windows boxes, i thought about using some of the credentials that i gained from the Windows machines
 
 
 
