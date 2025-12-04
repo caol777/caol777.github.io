@@ -216,9 +216,13 @@ Before I got locked out, I used the `w` or `who` command to see who was logged i
 
 <img width="685" height="94" alt="image" src="https://github.com/user-attachments/assets/4935b4b7-a4f3-4ece-b612-a48a940b01f6" />
 
-I was able to use the `bobby` user to log into `hankcore` and privilege escalate to root the same way I did on the other machine.
+I was able to use the `bobby` user to log into `hankcore` via SSH. Once in, I privilege escalated to root using `sudo bash` just like I did on the previous machine.
+
+Upon checking the active users with the `who` command, I spotted a rival hacker named `gary` who was actively logged in on multiple terminals (`pts/1` and `pts/2`).
 
 <img width="771" height="514" alt="image" src="https://github.com/user-attachments/assets/16e481bf-895e-4a76-808d-c31b33971532" />
+
+I immediately attempted to remove his account using `userdel gary`, but the command failed because he had active processes running. To fix this, I went into "Incident Response" mode and used `pkill -9` to forcefully terminate his specific TTY sessions and process IDs. Once his connections were severed, I was free to delete his account and secure the box.
 
 ---
 
