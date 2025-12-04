@@ -190,7 +190,25 @@ This was because of ``(ALL : ALL) NOPASSWD: ALL `` This meant that everyone coul
 ---
 ## Defending Linux
 
+When i got admin, i planted my flag using ``echo "flag" > /root/flag.txt `` and made it immutable with `` chattr +i  /root/flag.txt `` However, i forgot to kick the current user out of the session and then got locked out my self.
+<img width="590" height="71" alt="image" src="https://github.com/user-attachments/assets/b8c4e07f-db9a-4066-9b80-ce79427095eb" />
 
+Before i got locked out i used the `` w/who `` command to see who was logged into the machine. I saw bobby (The user i used to gain root) and pr0pane3. The plan from then on was to get access to another machine and remove the current user from the system.
+<img width="685" height="94" alt="image" src="https://github.com/user-attachments/assets/4935b4b7-a4f3-4ece-b612-a48a940b01f6" />
 
+I was able to use the bobby user to log into hankcore and privledge escalate to root the same way i did on the other machine. 
 
+<img width="771" height="514" alt="image" src="https://github.com/user-attachments/assets/16e481bf-895e-4a76-808d-c31b33971532" />
 
+---
+## Conclusion
+
+In the end, these were the machines that i had under my control.
+
+<img width="684" height="727" alt="Screenshot 2025-11-30 190122" src="https://github.com/user-attachments/assets/baa5139b-120f-4c5c-81f1-a09b8ef4e825" />
+
+This was the most that i had.
+
+<img width="755" height="762" alt="Screenshot 2025-11-30 182928" src="https://github.com/user-attachments/assets/5177bbca-1533-4837-be7f-d18d9b02717f" />
+
+Overall, i ended in 2nd place and had a great time competiting in such a unqiue and fun compepetion. 
