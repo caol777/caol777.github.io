@@ -75,6 +75,7 @@ With these credentials i was able to set up a password spray attack to see what 
 <img width="586" height="423" alt="image" src="https://github.com/user-attachments/assets/66e7f2a0-e7fb-49ad-9e61-f109146c1a8a" />
 
 
+
 After i found a valid login i used it to perform a kereroast attack on the domain controller (Since kereberos was open). 
 
 
