@@ -118,7 +118,7 @@ NTLM hashes are special, instead of using hashcat to find the admin password you
 
 ---
 ## Defending Windows
-Once I got admin, I had to plant my flag and secure the machine so other hackers couldn't steal it. 
+Once I got admin, I had to plant my flag and secure the machine so other hackers couldn't steal it. At first, i used a simple echo command and pushed the output into the flag but, eventually an attacker stole my box so, i made a looping bash script that would: check if the file was there, put it back, and make it read only/hidden
 
 
     echo "FLAG-S3X7Q5K8M2T9R4BL" > C:\Users\Administrator\Desktop\flag.txt
@@ -140,6 +140,12 @@ Once I got admin, I had to plant my flag and secure the machine so other hackers
     }
 
  <img width="800" height="413" alt="image" src="https://github.com/user-attachments/assets/5875fcd0-8a7c-448a-ba70-7eebca649278" />
+
+Somehow the attacker still was able to steal my flag and i had to figure out a way to get it back. One thing i knew is that we couldnt delete files so the only way which went that my script was partily flawed but for a quick fix i just removed the attributes and then ran my script again. 
+
+
+After that, i changed the passwords of the domain admin accounts that i used to get the NTML hash. 
+
 
 ---
 ## Attacking Linux
