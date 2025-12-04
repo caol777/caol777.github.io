@@ -180,10 +180,11 @@ At that point, I decided to log back in and try to get linpeas (A Linux privledg
      chmod +x linpeas.sh
      ./linpeas.sh
      
-While it was running, I found a suid binary on bash means all i had to do was type in "sudo bash" to get root.
+While it was running, I found that the sudoers file was misconfigured so I was able to run admin credentials without an admin password.
 
-<img width="1374" height="511" alt="image" src="https://github.com/user-attachments/assets/7d633ab4-4022-41e8-8ff5-1fc645f76dbc" />
+<img width="1354" height="160" alt="image" src="https://github.com/user-attachments/assets/7e82dd93-4ff5-4aff-808e-6b9f6aec5e22" />
 
+This was because of ``(ALL : ALL) NOPASSWD: ALL `` This meant that everyone could run sudo without valid access and with that i did `` sudo bash `` to turn root.
 
 
 ---
