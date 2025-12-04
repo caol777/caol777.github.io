@@ -66,3 +66,6 @@ Finally, after i got the file i got my credentials.
 
 
 <img width="227" height="194" alt="image" src="https://github.com/user-attachments/assets/b9ad7189-c87f-4892-92c4-6f024a6f663e" />
+
+
+With these credentials i was able to set up a 
