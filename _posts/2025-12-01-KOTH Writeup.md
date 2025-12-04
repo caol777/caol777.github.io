@@ -186,9 +186,12 @@ While it was running, I found that the sudoers file was misconfigured so I was a
 
 This was because of ``(ALL : ALL) NOPASSWD: ALL `` This meant that everyone could run sudo without valid access and with that i did `` sudo bash `` to turn root.
 
+<img width="234" height="40" alt="image" src="https://github.com/user-attachments/assets/2997b3d8-8297-4c5a-9b6e-ce6ab38f2fbe" />
 
 ---
 ## Defending Linux
+
+
 
 
 
