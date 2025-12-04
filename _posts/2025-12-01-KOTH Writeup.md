@@ -121,7 +121,7 @@ NTLM hashes are special, instead of using hashcat to find the admin password you
 Once I got admin, I had to plant my flag and secure the machine so other hackers couldn't steal it. 
 
 
-    *Evil-WinRM* PS C:\Users\Administrator\Desktop> echo "FLAG-S3X7Q5K8M2T9R4BL" > C:\Users\Administrator\Desktop\flag.txt
+    echo "FLAG-S3X7Q5K8M2T9R4BL" > C:\Users\Administrator\Desktop\flag.txt
     ------------------------------------
     $flag = "FLAG-S3X7Q5K8M2T9R4BL"
     $path = "C:\Users\Administrator\Desktop\flag.txt"
