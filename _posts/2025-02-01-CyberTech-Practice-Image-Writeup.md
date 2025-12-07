@@ -1,4 +1,8 @@
-# Cyber-Tech-Ubuntu-Practice-image-write-up
+---
+layout: post
+title:  "Cyber-Tech-Ubuntu-Practice-image-write-up"
+tags: [system hardening, linux]
+---
 
 ## The Scenario
 
