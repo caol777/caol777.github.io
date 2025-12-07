@@ -46,11 +46,18 @@ hr {
 
 /* Terminal Theme Overrides */
 :root {
-  --terminal-bg: #2b221b;       /* Dark brown background */
-  --terminal-text: #e69138;     /* Orange text */
-  --terminal-yellow: #f1c232;   /* Yellow accent */
-  --terminal-link: #ff9d00;     /* Bright orange link */
-  --terminal-code-bg: #1a1614;  /* Darker background for code */
+  --terminal-bg: #2b221b;
+  /* Dark brown background */
+  --terminal-text: #cccccc;
+  /* Grey text for body */
+  --terminal-accent: #e69138;
+  /* Orange for headers/accents */
+  --terminal-yellow: #f1c232;
+  /* Yellow accent */
+  --terminal-link: #ff9d00;
+  /* Bright orange link */
+  --terminal-code-bg: #1a1614;
+  /* Darker background for code */
   --terminal-header-bg: #e69138;
   --terminal-header-text: #2b221b;
 }
@@ -61,7 +68,15 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
 
-a, .site-title, .site-nav .page-link {
+/* Ensure post content text is specifically grey if themes try to override */
+.post-content,
+.post-content p {
+  color: var(--terminal-text);
+}
+
+a,
+.site-title,
+.site-nav .page-link {
   color: var(--terminal-link) !important;
 }
 
@@ -70,13 +85,18 @@ a:hover {
   color: var(--terminal-yellow) !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: var(--terminal-text);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--terminal-accent);
 }
 
 /* Header style like the image (Terminal block) */
 .site-header {
-  border-bottom: 2px solid var(--terminal-text);
+  border-bottom: 2px solid var(--terminal-accent);
   margin-bottom: 2em;
 }
 
@@ -88,20 +108,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Code blocks */
-pre, code {
+pre,
+code {
   background-color: var(--terminal-code-bg);
-  color: #ccc; /* Code text usually needs contrast, keep it light grey or off-white */
-  border: 1px solid var(--terminal-text);
+  color: #ccc;
+  /* Code text usually needs contrast, keep it light grey or off-white */
+  border: 1px solid var(--terminal-accent);
   border-radius: 4px;
 }
 
 div.highlighter-rouge .highlight {
-    background: var(--terminal-code-bg);
+  background: var(--terminal-code-bg);
 }
 
 blockquote {
   color: var(--terminal-yellow);
-  border-left: 4px solid var(--terminal-text);
+  border-left: 4px solid var(--terminal-accent);
 }
 
 table {
