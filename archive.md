@@ -3,11 +3,11 @@ layout: page
 title: Blog Archive
 ---
 
-{% for tag in site.tags %}
-  <h3>{{ tag[0] }}</h3>
+{% for post in site.posts %}
   <ul>
-    {% for post in tag[1] %}
-      <li><a href="{{ post.url }}">{{ post.date | date: "%B %Y" }} - {{ post.title }}</a></li>
-    {% endfor %}
+    <li>
+      <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+    </li>
   </ul>
 {% endfor %}
