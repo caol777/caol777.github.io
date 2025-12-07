@@ -15,6 +15,13 @@ layout: default
       {%- if author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ author }}</span></span>
       {%- endif -%}</p>
+      {% if page.tags %}
+        <div class="post-tags" style="margin-top: 10px;">
+          {% for tag in page.tags %}
+            <span style="background: var(--terminal-text); color: var(--terminal-bg); padding: 2px 6px; border-radius: 4px; font-size: 0.8em; margin-right: 5px;">#{{ tag }}</span>
+          {% endfor %}
+        </div>
+      {% endif %}
   </header>
 
   
