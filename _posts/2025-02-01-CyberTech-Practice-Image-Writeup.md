@@ -3,7 +3,8 @@ layout: post
 title:  "Cyber-Tech-Ubuntu-Practice-image-write-up"
 tags: [system hardening, linux]
 ---
-
+#Cyber-Tech-Ubuntu-Practice-image-write-up
+---
 ## The Scenario
 
  This company's security policies require that all user accounts be password protected. Employees are required to choose secure passwords, however this policy may not be currently enforced on this computer. The presence of any non-work related media files and "hacking tools" on any computers is strictly prohibited. This company currently does not use any centralized maintenance or polling tools to manage their IT equipment. This computer is for official business use only by authorized users. This is a critical computer in a production environment. Please do NOT attempt to upgrade the operating system on this machine.
