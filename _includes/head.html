@@ -1,20 +1,16 @@
 <!-- Site build date: {{ "now" | date: "%FT%T%z" }} -->
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="/favicon.png">
-  <style>
-    body {
-      background-color: grey;
-    }
-  </style>
+<style>
+body {background-color: grey;}
+</style>
   <!-- Begin SEO -->
   {% seo %}
   <!-- End SEO -->
 
-  <link rel="stylesheet" href="{{ " /assets/main.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="stylesheet" type="text/css" href="/css/override.css">
 
   {% feed_meta %}
