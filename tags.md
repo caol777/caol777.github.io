@@ -10,7 +10,7 @@ permalink: /tags/
 .tag-box {
   display: inline-block;
   background: var(--terminal-text);
-  color: var(--terminal-bg);
+  color: #000000;
   padding: 5px 10px;
   border-radius: 4px;
   margin: 5px;
