@@ -43,3 +43,67 @@ hr {
   font-size: 2.5em;
   opacity: 0.3;
 }
+
+/* Terminal Theme Overrides */
+:root {
+  --terminal-bg: #2b221b;       /* Dark brown background */
+  --terminal-text: #e69138;     /* Orange text */
+  --terminal-yellow: #f1c232;   /* Yellow accent */
+  --terminal-link: #ff9d00;     /* Bright orange link */
+  --terminal-code-bg: #1a1614;  /* Darker background for code */
+  --terminal-header-bg: #e69138;
+  --terminal-header-text: #2b221b;
+}
+
+body {
+  background-color: var(--terminal-bg);
+  color: var(--terminal-text);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+a, .site-title, .site-nav .page-link {
+  color: var(--terminal-link) !important;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--terminal-yellow) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--terminal-text);
+}
+
+/* Header style like the image (Terminal block) */
+.site-header {
+  border-bottom: 2px solid var(--terminal-text);
+  margin-bottom: 2em;
+}
+
+.site-title {
+  background-color: var(--terminal-header-bg);
+  color: var(--terminal-header-text) !important;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+
+/* Code blocks */
+pre, code {
+  background-color: var(--terminal-code-bg);
+  color: #ccc; /* Code text usually needs contrast, keep it light grey or off-white */
+  border: 1px solid var(--terminal-text);
+  border-radius: 4px;
+}
+
+div.highlighter-rouge .highlight {
+    background: var(--terminal-code-bg);
+}
+
+blockquote {
+  color: var(--terminal-yellow);
+  border-left: 4px solid var(--terminal-text);
+}
+
+table {
+  color: inherit;
+}
