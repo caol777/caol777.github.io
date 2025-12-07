@@ -84,7 +84,7 @@ Answer: I'll be back - HackerXYZ
 ## Forensic Question 4
 The hacker who gained access to this computer appended an insecure line in a critical file for sudo permissions. What is that line? (You should probably delete it after you find it).
 
-If you go to '/etc' do 'ls | grep sudo' , you can see a few sudo files to look at. 
+If you go to the /etc directory do `ls | grep sudo` , you can see a few sudo files to look at. 
 In our case the line is in sudoers. To change it you would have to do sudo nano sudoers and look for the Defaults !authenticate line.
 
 This line is not a default line and has to be removed.
