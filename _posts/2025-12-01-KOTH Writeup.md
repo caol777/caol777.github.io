@@ -1,4 +1,8 @@
-# Cal Poly Swift KOTH - Write-Up
+---
+layout: post
+title:  "Cal Poly Swift KOTH - Write-Up"
+tags: [penetration testing, system hardening, powershell, linux]
+---
 
 ---
 
