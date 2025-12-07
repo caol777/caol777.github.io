@@ -17,7 +17,7 @@ In order to get scored, you had to keep your services running and secured while 
 * **Linux:** `/root/flag.txt`
 * **Windows:** `\Users\Administrator\Desktop\flag.txt`
 
-Also, for the sake of fun, you couldn't change the root/Administrator password.
+Also, for the sake of fun, you couldn't change the root/Administrator password!
 
 There were also trivia questions that would give us points if we answered them correctly and fast enough.
 
