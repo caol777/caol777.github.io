@@ -22,6 +22,9 @@ We had an absolute blast, and more importantly we met a ton of cool fellow cyber
 
 On the technical side, Horse Plinko is where our defense actually came together. I was administering high-availability Apache, DNS, and MySQL services and holding strict uptime SLAs in the 80–100% range while the scoring engine hammered us. We ended up placing **5th**, and I got to mentor a peer team that landed **3rd**. Seeing a team I coached beat us was one of the proudest moments I've had in this whole journey.
 
+![The team at UCF's Horse Plinko Cyber Challenge with the HACK@UCF crew](/assets/img/horse-plinko.jpg)
+*Horse Plinko — Season Three shirts, badges up, and the moment it all clicked for us.*
+
 ## The Lessons That Hurt (WRCCDC)
 
 We also ran WRCCDC as practice, and that one taught us a lesson the hard way: **dependencies matter.** Especially when your Linux boxes are AD-joined.
