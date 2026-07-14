@@ -7,20 +7,24 @@ permalink: /tags/
 # All Tags
 
 <style>
+.tags-container { margin: 18px 0; }
 .tag-box {
   display: inline-block;
-  background: var(--terminal-text);
-  color: #000000;
-  padding: 5px 10px;
+  background: var(--terminal-accent);
+  color: var(--terminal-bg) !important;
+  padding: 5px 12px;
   border-radius: 4px;
   margin: 5px;
-  text-decoration: none;
+  text-decoration: none !important;
   font-weight: bold;
+  text-shadow: none;
 }
 .tag-box:hover {
-    background: var(--terminal-yellow);
-    color: var(--terminal-bg) !important;
+  background: var(--terminal-yellow);
+  color: var(--terminal-bg) !important;
+  text-decoration: none !important;
 }
+.tag-list-section h2 { scroll-margin-top: 20px; }
 </style>
 
 <div class="tags-container">
@@ -32,6 +36,7 @@ permalink: /tags/
 
 <hr>
 
+<div class="tag-list-section">
 {% for tag in tags %}
   <h2 id="{{ tag[0] | slugify }}">#{{ tag[0] }}</h2>
   <ul>
@@ -43,3 +48,4 @@ permalink: /tags/
     {% endfor %}
   </ul>
 {% endfor %}
+</div>
