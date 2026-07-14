@@ -1,0 +1,34 @@
+# =========================================================
+# Competition Placements
+# ---------------------------------------------------------
+# Add a new block for each competition. Newest first looks best.
+# Fields:
+#   placement : text shown in the first column (e.g. "2nd Place", "Top 5", "Qualified")
+#   medal     : gold | silver | bronze | ""   (colors the placement text; leave "" for none)
+#   event     : name of the competition
+#   url       : optional link (write-up, event site, results). Leave "" for no link.
+#   date      : when it happened (any text, e.g. "Dec 2025")
+#   note      : optional extra context. Leave "" to hide.
+# =========================================================
+
+- placement: "2nd Place"
+  medal: "silver"
+  event: "Cal Poly Swift KOTH"
+  url: "/2025/12/01/KOTH-Writeup.html"
+  date: "Dec 2025"
+  note: "Purple-team King of the Hill"
+
+# ---- Placeholder rows — edit or delete these ----
+- placement: "TODO"
+  medal: ""
+  event: "Competition name here"
+  url: ""
+  date: "Month Year"
+  note: ""
+
+- placement: "TODO"
+  medal: ""
+  event: "Competition name here"
+  url: ""
+  date: "Month Year"
+  note: ""
