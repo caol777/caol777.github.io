@@ -39,3 +39,8 @@ The other big win was automation. I wrote Bash scripts that took our initial har
 The results speak for themselves. From that last-place CCDC finish, we clawed our way to **15th out of 45 in the SECCDC Qualifiers** (and 7th in Incident Response), **7th out of 28 at the Cal Poly Mock CCDC**, and **5th at NCAE CyberGames** with me as Linux team captain.
 
 But the placements aren't really the point. The point is that a group of people decided to take last place personally, and turned it into a reason to get closer, work harder, and lift each other up. That's the turnaround I'm actually proud of.
+
+---
+
+![The FAU Cybersecurity Club team at CCDC](/assets/img/ccdc-team.jpg)
+*Practice-lab chaos — stacked monitors, cable spaghetti, a projector full of notes, and at least one pancake on the table. This crew is the reason last place turned into a comeback.*
