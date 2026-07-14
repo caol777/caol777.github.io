@@ -1,34 +1,74 @@
 # =========================================================
 # Competition Placements
 # ---------------------------------------------------------
-# Add a new block for each competition. Newest first looks best.
-# Fields:
-#   placement : text shown in the first column (e.g. "2nd Place", "Top 5", "Qualified")
-#   medal     : gold | silver | bronze | ""   (colors the placement text; leave "" for none)
+# Add / edit blocks below. Fields:
+#   placement : text in the first column (e.g. "1st Place", "7th / 28")
+#   medal     : gold | silver | bronze | ""   (colors the placement text)
 #   event     : name of the competition
-#   url       : optional link (write-up, event site, results). Leave "" for no link.
-#   date      : when it happened (any text, e.g. "Dec 2025")
+#   url       : optional link (write-up / results). Leave "" for none.
+#   date      : when it happened (adjust these to the exact months)
 #   note      : optional extra context. Leave "" to hide.
 # =========================================================
 
+- placement: "1st Place"
+  medal: "gold"
+  event: "HackspaceCon — Phone Phreaking CTF"
+  url: ""
+  date: "2025"
+  note: "Black Badge"
+
+- placement: "1st Place"
+  medal: "gold"
+  event: "FPL Vulnerability Management CTF"
+  url: ""
+  date: "2025"
+  note: "BSides South Florida"
+
 - placement: "2nd Place"
   medal: "silver"
-  event: "Cal Poly Swift KOTH"
+  event: "Cal Poly Swift — Purple Team KOTH"
   url: "/2025/12/01/KOTH-Writeup.html"
   date: "Dec 2025"
-  note: "Purple-team King of the Hill"
+  note: "King of the Hill — read the write-up"
 
-# ---- Placeholder rows — edit or delete these ----
-- placement: "TODO"
-  medal: ""
-  event: "Competition name here"
+- placement: "2nd Place"
+  medal: "silver"
+  event: "SFISSA Hack-The-Flag Advanced CTF"
   url: ""
-  date: "Month Year"
+  date: "2025"
   note: ""
 
-- placement: "TODO"
+- placement: "5th Place"
   medal: ""
-  event: "Competition name here"
+  event: "NCAE CyberGames"
   url: ""
-  date: "Month Year"
+  date: "2025"
+  note: "Led the team"
+
+- placement: "5th Place"
+  medal: ""
+  event: "UCF Plinko Horse"
+  url: ""
+  date: "2025"
+  note: "Mentored a peer team to 3rd Place"
+
+- placement: "6th Place"
+  medal: ""
+  event: "eMerge Americas — DevCom Hackathon"
+  url: ""
+  date: "2025"
+  note: "AI / AWS Cowrie honeypot"
+
+- placement: "7th / 28"
+  medal: ""
+  event: "Cal Poly Mock CCDC"
+  url: ""
+  date: "2025"
   note: ""
+
+- placement: "15th / 45"
+  medal: ""
+  event: "SECCDC Qualifiers"
+  url: ""
+  date: "2025"
+  note: "7th in Incident Response"
