@@ -1,41 +1,234 @@
+/* =========================================================
+   Shaamad's Blog — Terminal Theme
+   Polished override on top of the minima theme.
+   ========================================================= */
+
+/* ---------- Theme variables ---------- */
+:root {
+  /* ---- Fallout: New Vegas Pip-Boy amber CRT palette ---- */
+  --terminal-bg:          #0d0a05;  /* near-black CRT screen        */
+  --terminal-bg-alt:      #17110a;  /* faint amber-tinted panel     */
+  --terminal-text:        #ffb642;  /* amber phosphor body text     */
+  --terminal-muted:       #b07a24;  /* dim amber (meta/secondary)   */
+  --terminal-accent:      #ffc14d;  /* bright amber (headers)       */
+  --terminal-yellow:      #ffd671;  /* highlight amber              */
+  --terminal-link:        #ffb642;  /* links are amber too (mono)   */
+  --terminal-code-bg:     #060402;  /* deepest black for code       */
+  --terminal-border:      #5a3d12;  /* dim amber border             */
+  --terminal-header-bg:   #ffb642;
+  --terminal-header-text: #0d0a05;
+  --terminal-glow:        rgba(255, 176, 66, 0.35); /* phosphor glow */
+}
+
+/* ---------- Base ---------- */
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--terminal-bg);
+  color: var(--terminal-text);
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.65;
+  letter-spacing: 0.1px;
+}
+
+.wrapper { max-width: 820px; }
+
+/* Comfortable reading measure + spacing */
+.page-content { padding: 24px 0 48px; }
+p, li { color: var(--terminal-text); }
+.post-content p,
+.post-content li { margin-bottom: 14px; }
+
+
+/* ---------- Pip-Boy CRT phosphor glow ---------- */
+body {
+  text-shadow: 0 0 2px var(--terminal-glow);
+}
+h1, h2, h3, h4, h5, h6,
+.site-title,
+.post-title,
+.post-list-heading {
+  text-shadow: 0 0 6px var(--terminal-glow);
+}
+a { text-shadow: 0 0 4px var(--terminal-glow); }
+
+/* Faint scanline overlay for the CRT feel (very subtle, non-intrusive) */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0,0,0,0) 0px,
+    rgba(0,0,0,0) 2px,
+    rgba(0,0,0,0.10) 3px
+  );
+  mix-blend-mode: multiply;
+}
+
+/* ---------- Links ---------- */
+a,
+.site-title,
+.site-nav .page-link {
+  color: var(--terminal-link) !important;
+  text-decoration: none;
+}
+a:hover {
+  color: var(--terminal-yellow) !important;
+  text-decoration: underline;
+}
+
+/* ---------- Headings ---------- */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--terminal-accent);
+  line-height: 1.25;
+  margin-top: 1.2em;
+}
+h1 { letter-spacing: -0.5px; }
+
+/* A subtle "$" prompt in front of the big section headings */
+.post-content h2::before {
+  content: "$ ";
+  color: var(--terminal-yellow);
+  opacity: 0.7;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  border-top: none;
+  border-bottom: 2px solid var(--terminal-accent);
+  margin-bottom: 1.8em;
+  min-height: 58px;
+}
+.site-title {
+  background-color: var(--terminal-header-bg);
+  color: var(--terminal-header-text) !important;
+  padding: 4px 12px;
+  font-weight: bold;
+  border-radius: 3px;
+}
+.site-title:hover { text-decoration: none; }
+.site-nav .page-link { margin-left: 6px; }
+
+/* ---------- Post list on the homepage ---------- */
+.post-list-heading {
+  color: var(--terminal-accent);
+  border-bottom: 1px dashed var(--terminal-border);
+  padding-bottom: 6px;
+}
+.post-list > li {
+  margin-bottom: 22px;
+  padding: 14px 16px;
+  background: var(--terminal-bg-alt);
+  border: 1px solid var(--terminal-border);
+  border-left: 3px solid var(--terminal-accent);
+  border-radius: 4px;
+  list-style: none;
+}
+.post-list { margin-left: 0; }
+.post-meta { color: var(--terminal-muted); }
+.post-link { color: var(--terminal-link) !important; }
+
+.rss-subscribe { color: var(--terminal-muted); }
+
+/* ---------- Code ---------- */
+pre, code {
+  background-color: var(--terminal-code-bg);
+  color: #e8e6e3;
+  border: 1px solid var(--terminal-accent);
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+}
+code { padding: 1px 6px; }
+pre {
+  padding: 12px 14px;
+  overflow-x: auto;
+  line-height: 1.5;
+}
+pre > code { border: 0; padding: 0; background: transparent; }
+div.highlighter-rouge .highlight { background: var(--terminal-code-bg); }
+
+/* ---------- Blockquotes ---------- */
+blockquote {
+  color: var(--terminal-yellow);
+  border-left: 4px solid var(--terminal-accent);
+  background: var(--terminal-bg-alt);
+  padding: 10px 15px;
+  font-style: normal;
+  letter-spacing: 0;
+}
+blockquote > :last-child { margin-bottom: 0; }
+
+/* ---------- Tables ---------- */
+table {
+  color: var(--terminal-text);
+  border: 1px solid var(--terminal-border);
+  width: 100%;
+}
+table th {
+  background-color: var(--terminal-accent);
+  color: var(--terminal-header-text);
+  border: 1px solid var(--terminal-border);
+}
+table td { border: 1px solid var(--terminal-border); }
+table tr:nth-child(even) { background-color: var(--terminal-bg-alt); }
+
+/* ---------- Images ---------- */
+.post-content img {
+  border: 1px solid var(--terminal-border);
+  border-radius: 4px;
+  margin: 8px 0;
+}
+
+/* ---------- Horizontal rule ---------- */
 hr {
   margin-top: 30px;
   margin-bottom: 20px;
+  border: 0;
+  border-top: 1px dashed var(--terminal-border);
 }
 
-/* Post navigation links */
-.post_navi {
-  display: flex;
+/* =========================================================
+   Competition Placements section (homepage)
+   ========================================================= */
+.competitions {
+  margin-top: 48px;
+  padding-top: 8px;
+  border-top: 2px solid var(--terminal-accent);
 }
-
-.post_navi-label {
-  font-size: 0.8em;
-  opacity: 0.5;
+.competitions h2 { margin-top: 0.6em; }
+.comp-intro { color: var(--terminal-muted); margin-bottom: 8px; }
+.comp-table { border-collapse: collapse; margin-top: 16px; }
+.comp-table th,
+.comp-table td { padding: 10px 14px; vertical-align: top; }
+.comp-place {
+  font-weight: bold;
+  color: var(--terminal-yellow);
+  white-space: nowrap;
 }
+.comp-place.gold   { color: #ffd54a; }
+.comp-place.silver { color: #d7d7d7; }
+.comp-place.bronze { color: #d8935b; }
+.comp-event a { font-weight: bold; }
+.comp-date { color: var(--terminal-muted); white-space: nowrap; }
 
+/* =========================================================
+   Post navigation (prev / next) — kept from original
+   ========================================================= */
+.post_navi { display: flex; }
+.post_navi-label { font-size: 0.8em; opacity: 0.5; }
 .post_navi .post_navi-item {
   padding: 0 2.2em;
   width: 50%;
   position: relative;
   color: inherit !important;
 }
-
-.post_navi .nav_prev {
-  text-align: left;
-}
-
-.post_navi .nav_next {
-  text-align: right;
-}
-
-.post_navi .nav_prev .post_navi-arrow {
-  left: 0;
-}
-
-.post_navi .nav_next .post_navi-arrow {
-  right: 0;
-}
-
+.post_navi .nav_prev { text-align: left; }
+.post_navi .nav_next { text-align: right; }
+.post_navi .nav_prev .post_navi-arrow { left: 0; }
+.post_navi .nav_next .post_navi-arrow { right: 0; }
 .post_navi .post_navi-arrow {
   position: absolute;
   top: 50%;
@@ -44,88 +237,44 @@ hr {
   opacity: 0.3;
 }
 
-/* Terminal Theme Overrides */
-:root {
-  --terminal-bg: #2b221b;
-  /* Dark brown background */
-  --terminal-text: #cccccc;
-  /* Grey text for body */
-  --terminal-accent: #e69138;
-  /* Orange for headers/accents */
-  --terminal-yellow: #f1c232;
-  /* Yellow accent */
-  --terminal-link: #ff9d00;
-  /* Bright orange link */
-  --terminal-code-bg: #1a1614;
-  /* Darker background for code */
-  --terminal-header-bg: #e69138;
-  --terminal-header-text: #2b221b;
+/* ---------- Small screens ---------- */
+@media screen and (max-width: 600px) {
+  .post_navi { flex-direction: column; }
+  .post_navi .post_navi-item { width: 100%; padding: 0 1.5em; }
+  .comp-table th, .comp-table td { padding: 8px 8px; }
+  .site-title { font-size: 20px; }
 }
 
-body {
-  background-color: var(--terminal-bg);
-  color: var(--terminal-text);
-  font-family: 'Courier New', Courier, monospace;
-}
-
-/* Ensure post content text is specifically grey if themes try to override */
-.post-content,
-.post-content p {
-  color: var(--terminal-text);
-}
-
-a,
-.site-title,
-.site-nav .page-link {
-  color: var(--terminal-link) !important;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: var(--terminal-yellow) !important;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--terminal-accent);
-}
-
-/* Header style like the image (Terminal block) */
-.site-header {
-  border-bottom: 2px solid var(--terminal-accent);
-  margin-bottom: 2em;
-}
-
-.site-title {
-  background-color: var(--terminal-header-bg);
-  color: var(--terminal-header-text) !important;
-  padding: 5px 10px;
-  font-weight: bold;
-}
-
-/* Code blocks */
-pre,
-code {
-  background-color: var(--terminal-code-bg);
-  color: #ccc;
-  /* Code text usually needs contrast, keep it light grey or off-white */
-  border: 1px solid var(--terminal-accent);
-  border-radius: 4px;
-}
-
-div.highlighter-rouge .highlight {
-  background: var(--terminal-code-bg);
-}
-
-blockquote {
-  color: var(--terminal-yellow);
-  border-left: 4px solid var(--terminal-accent);
-}
-
-table {
-  color: inherit;
-}
+/* =========================================================
+   highlight.js token colors — Pip-Boy amber family
+   (kept within amber/green-amber range for the mono-CRT feel)
+   ========================================================= */
+.hljs { background: var(--terminal-code-bg); color: var(--terminal-text); }
+.hljs-comment,
+.hljs-quote        { color: #a06f22; font-style: italic; }
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-built_in,
+.hljs-name,
+.hljs-tag          { color: #ffc14d; font-weight: bold; }
+.hljs-string,
+.hljs-title,
+.hljs-section,
+.hljs-attribute,
+.hljs-literal,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-type,
+.hljs-addition     { color: #ffd671; }
+.hljs-number,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-selector-class { color: #ffe9a8; }
+.hljs-variable,
+.hljs-params       { color: #f0c063; }
+.hljs-deletion     { color: #c0631a; }
+.hljs-emphasis     { font-style: italic; }
+.hljs-strong       { font-weight: bold; }
