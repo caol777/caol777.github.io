@@ -8,7 +8,7 @@ Some CTFs are you and a laptop. This one was me, a friend, a wall of old telepho
 
 ## Finding a Teammate
 
-A few weeks before the event I'd met someone at HackspaceCon, one of those quick "oh you're into this too?" conversations that cybersecurity conferences are full of. When the Phone Phreaking CTF came around, I tracked them down and we decided to team up. Half of doing well in this scene is just finding the right people to nerd out with, and this ended up being a perfect match.
+Here's a funny one: I've only ever been to a *single* UFSIT meeting — UF's student infosec club, a few hours up the road — but that one visit is what won me this competition. That's where I met the guy who'd end up being my teammate. When we crossed paths again at HackspaceCon a while later, I jumped on his phone phreaking CTF team without hesitation. Half of doing well in this scene is just finding the right people to nerd out with, and one random meeting turned out to be exactly that.
 
 The CTF was hosted by John Aff (a.k.a. Panda), and it was unlike anything I'd walked into before.
 
