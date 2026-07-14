@@ -1,3 +1,7 @@
+---
+layout: home
+---
+
 **About the Blog:** This is my hub for write-ups on cybersecurity competitions, events, and projects. I hope my insights can help others learn along with me.
 
 **About Me:** Hey, I'm Shaamad. I am an MIS major passionate about Cybersecurity and IT Infrastructure. Currently, I serve as the president of my school's cybersecurity club, where I act as a Linux instructor, competition advisor, and overall jack-of-all-trades. I also created the central repository we use for competitions, writing the Bash and Python automation scripts while collaborating with our Windows lead, Marcos, on the PowerShell integration
