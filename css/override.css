@@ -311,6 +311,7 @@ hr {
 .social-media-list li {
   margin-bottom: 8px;
   line-height: 1.5;
+  white-space: nowrap;
 }
 .contact-list .p-name {
   color: var(--terminal-text);
