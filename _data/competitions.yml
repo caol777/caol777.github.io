@@ -66,6 +66,13 @@
   date: "Spring 2026"
   note: "Linux & Windows sysadmin"
 
+- placement: "10th / 13"
+  medal: ""
+  event: "UBlockdown"
+  url: ""
+  date: "Spring 2026"
+  note: "Linux sysadmin & threat hunting — identified a C2 callback masquerading as a systemd service"
+
 - placement: "15th / 45"
   medal: ""
   event: "SECCDC Qualifiers"
