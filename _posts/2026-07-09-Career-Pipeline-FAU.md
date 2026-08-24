@@ -33,6 +33,10 @@ The guest speakers open doors, but the best outcome is when the club becomes a g
 
 That's exactly what happened at the end of my internship at **Arete.** A fellow club member and I did well enough there that we were able to **recommend other people from our club for interviews** — creating a direct line from our little club room straight into a real security company. There's no better feeling than knowing the work you put in opened a door not just for you, but for the people coming up behind you.
 
+That experience changed how I thought about my role as President. It wasn't enough to bring professionals in to speak — I wanted to be the connection myself. So I started being intentional about it: building relationships at the companies I worked for, making sure the right people knew the club existed, and being in a position to put names forward when opportunities came up.
+
+That work is ongoing. Right now I actively have a way to get club members into cybersecurity internship interviews. Not hypothetically — there is a real path, and it runs through the club. That's what I want members to know when they join: it's not just workshops and competitions. Show up, put in the work, and there are people in your corner who can open actual doors.
+
 ## Making Friends Across Clubs
 
 A lot of our growth didn't come from inside FAU at all — it came from showing up to *other* schools' clubs, showing genuine interest, and making friends.
