@@ -9,95 +9,94 @@
 #   date      : when it happened (adjust these to the exact months)
 #   note      : optional extra context. Leave "" to hide.
 # =========================================================
- 
+
 - placement: "1st Place"
   medal: "gold"
   event: "SFISSA Hack-The-Flag Beginner CTF"
   url: "/2026/09/19/SFISSA-HTF-Beginner-CTF.html"
   date: "Fall 2026"
   note: "82/83 flags"
- 
+
 - placement: "1st Place"
   medal: "gold"
   event: "HackspaceCon — Phone Phreaking CTF"
-  url: ""
+  url: "/2026/07/11/Black-Badge-Phreaking-CTF.html"
   date: "Spring 2026"
   note: "Black Badge"
- 
+
 - placement: "1st Place"
   medal: "gold"
   event: "FPL Vulnerability Management CTF"
   url: ""
   date: "Spring 2026"
   note: "BSides South Florida"
- 
+
 - placement: "2nd Place"
   medal: "silver"
   event: "Cal Poly Swift — Purple Team KOTH"
   url: "/2025/12/01/KOTH-Writeup.html"
   date: "Fall 2025"
   note: "King of the Hill — read the write-up"
- 
+
 - placement: "2nd Place"
   medal: "silver"
   event: "SFISSA Hack-The-Flag Advanced CTF"
   url: ""
   date: "Fall 2025"
   note: ""
- 
+
 - placement: "5th Place"
   medal: ""
   event: "NCAE CyberGames"
   url: ""
   date: "Spring 2026"
   note: "Linux admin (SMB & HTTPS) and network admin on a MikroTik router"
- 
+
 - placement: "5th Place"
   medal: ""
   event: "UCF Horse Plinko"
   url: ""
   date: "Fall 2025"
   note: "Mentored a peer team to 3rd Place"
- 
+
 - placement: "6th Place"
   medal: ""
   event: "eMerge Americas — DevCom Hackathon"
   url: ""
   date: "Spring 2026"
   note: "AI / AWS Cowrie honeypot running on Debian 12"
- 
+
 - placement: "7th / 28"
   medal: ""
   event: "Cal Poly Mock CCDC"
   url: ""
   date: "Spring 2026"
   note: "Linux & Windows sysadmin"
- 
+
 - placement: "10th / 13"
   medal: ""
   event: "UBlockdown"
   url: ""
   date: "Spring 2026"
   note: "Linux sysadmin & threat hunting — identified a C2 callback masquerading as a systemd service"
- 
+
 - placement: "15th / 45"
   medal: ""
   event: "SECCDC Qualifiers"
   url: ""
   date: "Spring 2026"
   note: "7th in Incident Response"
- 
+
 - placement: "~50 / 200"
   medal: ""
   event: "eCitadel"
   url: ""
   date: "Summer 2026"
   note: "Full scores never released — system hardening & defense with injects"
- 
+
 - placement: "77 / 186"
   medal: ""
   event: "eCitadel"
   url: ""
   date: "Summer 2025"
   note: "System hardening & defense with injects — I ran Linux hardening and the business writing"
- 
