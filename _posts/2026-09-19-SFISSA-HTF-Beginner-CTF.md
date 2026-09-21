@@ -18,8 +18,6 @@ We had people working to their strengths from the jump. Web challenges went to w
 
 The competition also had a cool undercurrent this time: **AI was everywhere.** Not just us — teams across the field were using LLMs to speed up pattern recognition, draft exploit chains, check syntax, explain unfamiliar concepts mid-challenge. Chad Hamad from **Cinch** even came through and demoed a local model setup purpose-built for CTF work — a self-hosted stack that could reason over challenge files without sending anything offsite. That's where the scene is heading and it was genuinely exciting to see it being used in practice, not just talked about.
 
-Alyson Zamora from **NextEra Energy** was also there, and seeing familiar faces from the industry at community events like this is always a reminder of why showing up matters. The scene is small and the same people keep finding each other in the best way.
-
 ## The Race
 
 We held first place for most of the competition, but it wasn't clean. A high school team called **Decode** was right behind us for the better part of the day — one flag away at their closest. That's a level of pressure I wasn't expecting from a beginner division, and honestly, respect. They were sharp, fast, and clearly prepared. The gap only widened in the final stretch when we were able to push through a few challenges they hadn't cracked yet.
