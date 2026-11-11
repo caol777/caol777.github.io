@@ -12,6 +12,13 @@
 
 - placement: "1st Place"
   medal: "gold"
+  event: "UCF Horse Plinko (HPCC4)"
+  url: ""
+  date: "Fall 2026"
+  note: "Linux/defense team captain; first non-UCF team ever to win"
+
+- placement: "1st Place"
+  medal: "gold"
   event: "SFISSA Hack-The-Flag Beginner CTF"
   url: "/2026/09/19/SFISSA-HTF-Beginner-CTF.html"
   date: "Fall 2026"
@@ -44,6 +51,13 @@
   url: ""
   date: "Fall 2025"
   note: ""
+
+- placement: "4th Place"
+  medal: ""
+  event: "CPTC Southeast Regional"
+  url: ""
+  date: "Fall 2026"
+  note: "Collegiate Penetration Testing Competition; led the Windows/Active Directory attack path"
 
 - placement: "5th Place"
   medal: ""
