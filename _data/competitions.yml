@@ -101,6 +101,13 @@
   date: "Spring 2026"
   note: "7th in Incident Response"
 
+- placement: "32nd / 102"
+  medal: ""
+  event: "DOE CyberForce Competition"
+  url: ""
+  date: "Fall 2026"
+  note: "U.S. Department of Energy competition hosted by Argonne National Laboratory; defended ICS/SCADA energy infrastructure against a live red team"
+
 - placement: "~50 / 200"
   medal: ""
   event: "eCitadel"
@@ -114,3 +121,4 @@
   url: ""
   date: "Summer 2025"
   note: "System hardening & defense with injects — I ran Linux hardening and the business writing"
+  
